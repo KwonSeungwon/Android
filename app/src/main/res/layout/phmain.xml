@@ -26,7 +26,7 @@
 
             android:gravity="center"
 
-            android:text="일정 관리" />
+            android:text="전화번호부" />
 
     </LinearLayout>
 
@@ -40,6 +40,8 @@
         android:layout_height="wrap_content"
 
         android:layout_weight="1"
+
+        android:background="@drawable/book"
 
         android:orientation="vertical" >
 
@@ -76,7 +78,7 @@
 
             android:layout_height="wrap_content"
 
-            android:text="일정 추가" />
+            android:text="전화번호부 추가" />
 
     </LinearLayout>
 

@@ -19,6 +19,8 @@
         <activity android:name=".cmain"></activity>
         <activity android:name=".Detail"></activity>
         <activity android:name=".ExToday"></activity>
+        <activity android:name=".Dday"></activity>
+        <activity android:name=".Phmain"></activity>
     </application>
 
 </manifest>
