@@ -21,6 +21,7 @@
         <activity android:name=".ExToday"></activity>
         <activity android:name=".Dday"></activity>
         <activity android:name=".Phmain"></activity>
+        <activity android:name=".Ddayadd"></activity>
     </application>
 
 </manifest>

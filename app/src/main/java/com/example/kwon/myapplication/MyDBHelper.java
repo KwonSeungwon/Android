@@ -35,7 +35,7 @@ public class MyDBHelper extends SQLiteOpenHelper{  //데이터베이스 클래�
 
                 + "title TEXT, " + "date TEXT , " + "time TEXT, "
 
-                + "memo TEXT );");
+                      + "memo TEXT );");
 
 
 

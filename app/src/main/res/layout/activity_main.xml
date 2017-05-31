@@ -26,36 +26,43 @@
             android:textStyle="bold"
             android:typeface="monospace" />
 
-        <Button
-            android:id="@+id/phbtn"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:padding="40px"
-            android:background="@android:color/transparent"
-            android:text="연락처관리" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/ddaybtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:padding="40px"
-            android:background="@android:color/transparent"
-            android:text="D-day" />
+            <Button
+                android:id="@+id/clabtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:onClick="clabtn"
+                android:padding="40px"
+                android:text="일정관리"
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/clabtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:onClick="clabtn"
-            android:text="일정관리"
-            android:padding="40px"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/ddaybtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:padding="40px"
+                android:text="D-day"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/phbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:padding="40px"
+                android:text="연락처관리"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

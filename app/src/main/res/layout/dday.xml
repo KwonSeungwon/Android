@@ -18,15 +18,13 @@
 
         <TextView
 
-            android:id="@+id/texttoday"
+            android:id="@+id/Daytext"
 
             android:layout_width="fill_parent"
 
             android:layout_height="wrap_content"
 
             android:gravity="center"
-
-            android:textColor="#FF33FF"
 
             android:text="나의 디데이" />
 
@@ -43,14 +41,12 @@
 
         android:layout_weight="1"
 
-        android:background="@drawable/peo"
-
         android:orientation="vertical" >
 
 
         <ListView
 
-            android:id="@+id/list1"
+            android:id="@+id/Ddaylist"
 
             android:layout_width="fill_parent"
 
@@ -80,7 +76,7 @@
 
             android:layout_height="wrap_content"
 
-            android:text="디데이추가" />
+            android:text="디데이 추가" />
 
     </LinearLayout>
 

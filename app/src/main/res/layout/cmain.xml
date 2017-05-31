@@ -81,8 +81,6 @@
     </LinearLayout>
 
 
-
-
     <LinearLayout
 
         android:layout_width="fill_parent"
@@ -91,9 +89,7 @@
 
         android:layout_weight="1"
 
-        android:orientation="vertical" >
-
-
+        android:orientation="vertical">
 
 
         <GridView
@@ -106,12 +102,11 @@
 
             android:gravity="center"
 
-            android:numColumns="7" >
+            android:numColumns="7">
 
         </GridView>
 
     </LinearLayout>
-
 
 
 </LinearLayout>
