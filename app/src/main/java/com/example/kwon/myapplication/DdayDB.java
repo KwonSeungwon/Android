@@ -3,27 +3,30 @@ package com.example.kwon.myapplication;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.app.Activity;
+import android.content.Intent;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.support.v7.widget.ListViewCompat;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CalendarView;
+import android.widget.GridView;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 
-public class DdayDB
-        extends SQLiteOpenHelper
-{
-    private static final String DATABASE = "dday_db";
 
-    public DdayDB(Context paramContext)
-    {
-        super(paramContext, "dday_db", null, 1);
-    }
 
-    public void onCreate(SQLiteDatabase paramSQLiteDatabase)
-    {
-        paramSQLiteDatabase.execSQL("CREATE TABLE task_content (_id INTEGER PRIMARY KEY AUTOINCREMENT,content TEXT, level INTEGER, datetime TEXT, status INTEGER, dday TEXT);");
-        paramSQLiteDatabase.execSQL("CREATE TABLE sys_set(_id INTEGER PRIMARY KEY AUTOINCREMENT, sort_type TEXT)");
-    }
-
-    public void onUpgrade(SQLiteDatabase paramSQLiteDatabase, int paramInt1, int paramInt2)
-    {
-        paramSQLiteDatabase.execSQL("DROP TABLE IF EXISTS task_content");
-        paramSQLiteDatabase.execSQL("DROP TABLE IF EXISTS sys_set");
-        onCreate(paramSQLiteDatabase);
-    }
-}
