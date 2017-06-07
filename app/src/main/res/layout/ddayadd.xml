@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/herat"
-            android:layout_weight="0.49" />
+            android:layout_weight="0.44" />
     </LinearLayout>
 
     <LinearLayout
@@ -78,5 +78,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="저장" />
+
+        <Button
+            android:id="@+id/canclebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="취소" />
     </LinearLayout>
+
 </LinearLayout>

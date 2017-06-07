@@ -22,6 +22,9 @@
         <activity android:name=".Dday"></activity>
         <activity android:name=".Phmain"></activity>
         <activity android:name=".Ddayadd"></activity>
-    </application>
+        <uses-permission android:name="android.permission.READ_CONTACTS" />
 
+    </application>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 </manifest>
+

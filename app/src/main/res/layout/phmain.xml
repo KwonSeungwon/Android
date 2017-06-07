@@ -41,14 +41,14 @@
 
         android:layout_weight="1"
 
-        android:background="@drawable/book"
+        android:background="#000000"
 
         android:orientation="vertical" >
 
 
         <ListView
 
-            android:id="@+id/list1"
+            android:id="@+id/phList"
 
             android:layout_width="fill_parent"
 
@@ -72,7 +72,7 @@
 
         <Button
 
-            android:id="@+id/btnadd"
+            android:id="@+id/phonebtn"
 
             android:layout_width="fill_parent"
 
