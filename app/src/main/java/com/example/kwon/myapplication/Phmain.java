@@ -2,6 +2,7 @@ package com.example.kwon.myapplication;
 
 import android.app.Activity;
 
+import android.content.Intent;
 import android.database.Cursor;
 
 import android.os.Bundle;
@@ -26,14 +27,13 @@ import java.util.Map;
 
 
 
-public class Phmain extends Activity implements View.OnClickListener{
+public class Phmain extends Activity implements View.OnClickListener {
 
     private ArrayList<Map<String, String>> dataList;
 
     private ListView mListview;
 
     private Button mBtnAddress;
-
 
 
     @Override
@@ -51,8 +51,16 @@ public class Phmain extends Activity implements View.OnClickListener{
 
         mBtnAddress.setOnClickListener(this);
 
-    }
+        Button test4 = (Button) findViewById(R.id.logbtn);
+        test4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Intent = new Intent(getApplicationContext(), callogview.class);
+                startActivity(Intent);
+            }
+        });
 
+    }
 
 
     public void onClick(View v) {
@@ -62,7 +70,6 @@ public class Phmain extends Activity implements View.OnClickListener{
             case R.id.phonebtn:
 
 
-
                 dataList = new ArrayList<Map<String, String>>();
 
                 Cursor c = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI,
@@ -70,9 +77,6 @@ public class Phmain extends Activity implements View.OnClickListener{
                         null, null, null,
 
                         ContactsContract.Contacts.DISPLAY_NAME_PRIMARY + " asc");
-
-
-
 
 
                 while (c.moveToNext()) {
@@ -90,7 +94,6 @@ public class Phmain extends Activity implements View.OnClickListener{
                     map.put("name", name);
 
 
-
                     // ID로 전화 정보 조회
 
                     Cursor phoneCursor = getContentResolver().query(
@@ -102,7 +105,6 @@ public class Phmain extends Activity implements View.OnClickListener{
                             ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id,
 
                             null, null);
-
 
 
                     // 데이터가 있는 경우
@@ -118,7 +120,6 @@ public class Phmain extends Activity implements View.OnClickListener{
                     }
 
 
-
                     phoneCursor.close();
 
                     dataList.add(map);
@@ -126,7 +127,6 @@ public class Phmain extends Activity implements View.OnClickListener{
                 }// end while
 
                 c.close();
-
 
 
                 SimpleAdapter adapter = new SimpleAdapter(getApplicationContext(),
@@ -141,11 +141,15 @@ public class Phmain extends Activity implements View.OnClickListener{
 
                 mListview.setAdapter(adapter);
 
+
+
+
         }
 
     }
-
 }
+
+
 
 
 

@@ -57,31 +57,32 @@
     </LinearLayout>
 
 
-
-
     <LinearLayout
 
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
 
-        android:layout_weight="0"
-
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
 
         <Button
 
             android:id="@+id/phonebtn"
 
-            android:layout_width="fill_parent"
+            android:layout_width="190dp"
 
             android:layout_height="wrap_content"
 
             android:text="전화번호부 추가" />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/logbtn"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="통화기록" />
 
+    </LinearLayout>
 
 
 </LinearLayout>

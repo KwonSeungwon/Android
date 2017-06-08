@@ -21,31 +21,30 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent Intent = new Intent(getApplicationContext(), cmain.class);
                 startActivity(Intent);
-
-
-                Button test = (Button) findViewById(R.id.ddaybtn);
-                test.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent Intent = new Intent(getApplicationContext(), Dday.class);
-                        startActivity(Intent);
-
-                        Button test = (Button) findViewById(R.id.phbtn);
-                        test.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Intent Intent = new Intent(getApplicationContext(), Phmain.class);
-                                startActivity(Intent);
-
-                            }
-                        });
-
-                    }
-                });
             }
         });
+
+        Button test2 = (Button) findViewById(R.id.ddaybtn);
+        test2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Intent = new Intent(getApplicationContext(), main.class);
+                startActivity(Intent);
+            }
+        });
+        Button test3 = (Button) findViewById(R.id.phbtn);
+        test3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Intent = new Intent(getApplicationContext(), Phmain.class);
+                startActivity(Intent);
+
+            }
+        });
+
     }
 }
+
 
 
 
