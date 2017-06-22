@@ -17,17 +17,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".cmain"></activity>
-        <activity android:name=".Detail"></activity>
-        <activity android:name=".ExToday"></activity>
-        <activity android:name=".Phmain"></activity>
-        <activity android:name=".main"></activity>
-        <activity android:name=".callogview"></activity>
+        <activity android:name=".Scheduler.cmain"></activity>
+        <activity android:name=".Scheduler.Detail"></activity>
+        <activity android:name=".Scheduler.ExToday"></activity>
+        <activity android:name=".PhoneBook.Phmain"></activity>
+        <activity android:name=".Scheduler.Dday"></activity>
         <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     </application>
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>
 

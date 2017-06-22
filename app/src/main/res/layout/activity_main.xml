@@ -18,7 +18,7 @@
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="280dp"
+            android:layout_height="364dp"
             android:gravity="center"
             android:text="ST Administrator"
             android:textColor="#F08080"
@@ -39,16 +39,6 @@
                 android:onClick="clabtn"
                 android:padding="40px"
                 android:text="일정관리"
-                android:textSize="30dp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/ddaybtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:padding="40px"
-                android:text="D-day"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 

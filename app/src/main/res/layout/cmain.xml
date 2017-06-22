@@ -7,6 +7,8 @@
 
     <LinearLayout
 
+        android:id="@+id/abc"
+
         android:layout_width="fill_parent"
 
         android:layout_height="wrap_content"
@@ -14,10 +16,7 @@
         android:layout_weight="0"
 
         android:gravity="center"
-
-        android:orientation="horizontal" >
-
-
+        android:orientation="horizontal">
 
 
         <EditText
@@ -31,8 +30,6 @@
             android:hint="년도 입력" />
 
 
-
-
         <TextView
 
             android:layout_width="wrap_content"
@@ -40,8 +37,6 @@
             android:layout_height="wrap_content"
 
             android:hint="년" />
-
-
 
 
         <EditText
@@ -55,8 +50,6 @@
             android:hint="월을 입력" />
 
 
-
-
         <TextView
 
             android:layout_width="wrap_content"
@@ -64,8 +57,6 @@
             android:layout_height="wrap_content"
 
             android:hint="월" />
-
-
 
 
         <Button
@@ -85,11 +76,10 @@
 
         android:layout_width="fill_parent"
 
-        android:layout_height="fill_parent"
+        android:layout_height="412dp"
 
-        android:layout_weight="1"
-
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
 
         <GridView
@@ -98,13 +88,35 @@
 
             android:layout_width="fill_parent"
 
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
 
             android:gravity="center"
 
             android:numColumns="7">
 
         </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ddaybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="디데이계산기" />
 
     </LinearLayout>
 
